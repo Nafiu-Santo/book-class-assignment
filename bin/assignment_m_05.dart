@@ -31,7 +31,7 @@ class Book {
     print('Book title: $title');
     print('Book author: $author');
     print('Book title: $publicationYear');
-    print('Book age: ${getBookAge()}');
+    print('Book age: ${getBookAge()}\n');
   }
   static void displayTotalBooks(){
     print('Total number of books: $totalBooks');
@@ -44,6 +44,14 @@ void main(){
   book1.getter();
   book2.getter();
   book3.getter();
+  book1.read(10);
+  book2.read(5);
+  book3.read(26);
+  print('Book1 has read ${book1.getPagesRead()} pages');
+  print('Book2 has read ${book2.getPagesRead()} pages');
+  print('Book3 has read ${book3.getPagesRead()} pages\n');
+
+
   Book.displayTotalBooks();
 
 }
