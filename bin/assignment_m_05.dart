@@ -37,3 +37,13 @@ class Book {
     print('Total number of books: $totalBooks');
   }
 }
+void main(){
+  Book book1 = Book(title: 'English', author:'Islam',publicationYear: 1960);
+  Book book2 = Book(title: 'Bengali', author:'Hasan',publicationYear: 1942);
+  Book book3 = Book(title: 'Math', author: 'Ikbal',publicationYear: 2002);
+  book1.getter();
+  book2.getter();
+  book3.getter();
+  Book.displayTotalBooks();
+
+}
